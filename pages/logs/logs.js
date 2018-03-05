@@ -6,6 +6,7 @@ Page({
     logs: []
   },
   onLoad: function () {
+    /* 页面渲染后，执行 */
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(log => {
         return util.formatTime(new Date(log))
