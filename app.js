@@ -1,6 +1,7 @@
 //app.js
 App({
-  onLaunch: function () {
+  /* 生命周期函数--监听小程序初始化，当小程序初始化完成时，会触发 onLaunch  */
+  onLaunch: function (options) {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -32,6 +33,15 @@ App({
         }
       }
     })
+  },
+  onShow:function(options){
+    /* 生命周期函数--监听小程序显示 */
+  },
+  onHide:function(){
+    /* 生命周期函数--监听小程序隐藏 */
+  },
+  onError:function(msg){
+    /* 错误监听函数: 当小程序发生脚本错误，或者api调用失败时，会触发 onError 并带上错误信息 */
   },
   globalData: {
     userInfo: null
