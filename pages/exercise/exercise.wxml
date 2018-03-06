@@ -42,6 +42,12 @@
       <view>这里是插入到组件 slot 中的内容</view>
     </component-tag-name>
   </view>
+
+   <view>------- 组件间关系 ---------</view>
+   <second-ul>
+      <second-li> item 1 </second-li>
+      <second-li> item 2 </second-li>
+   </second-ul>
   　
 
 </view>
