@@ -1,38 +1,46 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/exercise/exercise"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "badmask",
-    "navigationBarTextStyle":"black",
-    "navigationStyle":"default",
-    "backgroundColor":"#aaaaff",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#aaaaff",
     "enablePullDownRefresh": true
   },
-  "tabBar":{
+  "tabBar": {
     "color": "#000000",
-    "selectedColor":"#ffaaff",
-    "backgroundColor":"#fff",
-    "borderStyle":"black",
-    "list":[{
-      "pagePath":"pages/index/index",
-      "text":"主页",
-      "iconPath":"images/home.jpg"
-    },
-    {
-      "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "images/log.jpg"
-    }],
-    "position":"bottom"
+    "selectedColor": "#ffaaff",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/home.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/log.jpg"
+      },
+      {
+        "pagePath": "pages/exercise/exercise",
+        "text": "练习",
+        "iconPath": "images/exercise.jpg"
+      }
+    ],
+    "position": "bottom"
   },
-  "networkTimeout":{
-    "request":60000,
-    "connectSocket":60000,
-    "uploadFile":60000,
-    "downloadFile":60000
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
   }
 }

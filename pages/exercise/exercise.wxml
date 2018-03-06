@@ -1,0 +1,38 @@
+  <!--pages/exercise/exercise.wxml-->
+<view class="container">
+
+  <template name="staffName">
+  <view>
+    FirstName:{{firstName}},LastName:{{lastName}}
+  </view>
+  </template>
+  <!-- 使用 is 属性，声明需要的使用的模版 -->
+  <template is="staffName" data="{{...staffA}}"></template>
+  <template is="staffName" data="{{...staffB}}"></template>
+  <template is="staffName" data="{{...staffC}}"></template>
+
+  <view bindtap="add">{{count}}</view>
+
+  <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+  <button bindtap="switch"> Switch </button>
+  <button bindtap="addToFront"> Add to the front </button>
+
+  <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+  <button bindtap="addNumberToFront"> Add to the front </button>
+
+  <block wx:if="{{true}}">
+    <view> view1 </view>
+    <view> view2 </view>
+  </block>
+
+  <!-- wx:if 有更高的切换消耗，而 hidden 有更高的初始渲染消耗。因此，如果需要频繁切换的情境下，用 hidden 更好，如果在运行时条件不大可能改变则 wx:if 较好。 -->
+
+  <!-- bind 事件绑定不会组织冒泡事件向上冒泡，catch 事件绑定可以阻止冒泡事件向上冒泡。 -->
+
+  <!-- 捕获阶段监听事件，可以采用 capture-bind , capture-catch 关键字，后者将中断捕获阶段和取消冒泡阶段。 -->
+
+  <!-- WXML 提供了两种文件引用方式 ：import: 可以在该文件中使用目标文件定义的 template; include: 可以将目标文件除了 <template/> <wxs/> 外的整个代码引入，相当于是拷贝到 include 位置。 -->
+
+  　
+
+</view>
