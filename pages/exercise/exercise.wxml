@@ -33,6 +33,15 @@
 
   <!-- WXML 提供了两种文件引用方式 ：import: 可以在该文件中使用目标文件定义的 template; include: 可以将目标文件除了 <template/> <wxs/> 外的整个代码引入，相当于是拷贝到 include 位置。 -->
 
+  <!-- WXS 文件可以编写在 wxml 文件中的 <wxs> 标签内，或以 .wxs 为后缀名的文件内。 -->
+
+  <view>自定义组件</view>
+
+  <view>
+    <component-tag-name>
+      <view>这里是插入到组件 slot 中的内容</view>
+    </component-tag-name>
+  </view>
   　
 
 </view>
