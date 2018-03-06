@@ -100,7 +100,9 @@ Page({
       numberArray: this.data.numberArray
     })
   },
-
+  onMyEvent:function(){
+    console.log("e.detail");
+  },
   /**
    * 用户点击右上角分享
    */

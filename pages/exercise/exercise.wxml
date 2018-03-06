@@ -38,7 +38,7 @@
   <view>自定义组件</view>
 
   <view>
-    <component-tag-name>
+    <component-tag-name bindmyevent="onMyEvent">
       <view>这里是插入到组件 slot 中的内容</view>
     </component-tag-name>
   </view>
